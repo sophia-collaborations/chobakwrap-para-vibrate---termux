@@ -14,6 +14,8 @@ sub opto__sec_do {
 
 &argola::runopts();
 
+system("echo",("Vibration milliseconds set to " . $vbtime . " (minimum is " . $vbminim . ")"));
+
 if ( $vbtime < ( $vbminim - 0.5 ) ) { exit(0); }
 
 exec("termux-vibrate","-f","-d",$vbtime);
