@@ -2,7 +2,7 @@ use strict;
 use argola;
 
 my $vbtime = 1000;
-my $vbminim = 100;
+my $vbminim = 30;
 
 sub opto__msec_do {
   $vbtime = int(&argola::getrg() + 0.45);
